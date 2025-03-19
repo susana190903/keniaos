@@ -1788,3 +1788,72 @@ figcaption {
         height: 70px;
     }
 }
+/* Estilo para la sección de redes sociales */
+.contacto-redess {
+    background-color: #f0f8ff; /* Fondo suave azul */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contacto-redess h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    color: #1e3a8a; /* Azul oscuro */
+    margin-bottom: 20px;
+}
+
+/* Contenedor de las redes sociales */
+.redes-socialess {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilo para cada enlace de red social */
+.red-sociall {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1e3a8a; /* Azul oscuro */
+    background-color: #e0f2ff; /* Fondo azul claro */
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Iconos de las redes sociales */
+.red-sociall img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Efectos al pasar el mouse */
+.red-sociall:hover {
+    background-color: #1e3a8a; /* Azul oscuro al hacer hover */
+    color: white; /* Texto blanco al hacer hover */
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente */
+}
+
+/* Estilo para las redes sociales con iconos */
+.red-sociall span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+/* Efecto hover específico para cada red social */
+.red-sociall:hover img {
+    filter: brightness(0) invert(1); /* Cambiar color de los iconos al invertirse el fondo */
+}
+
+/* Estilos para cuando la pantalla es más pequeña (responsive) */
+@media (max-width: 768px) {
+    .redes-socialess {
+        flex-direction: column;
+        align-items: center;
+    }
+}
